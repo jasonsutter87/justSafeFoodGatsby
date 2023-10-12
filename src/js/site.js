@@ -1,8 +1,6 @@
 import $ from 'jquery';
 
-
-    console.log("jQuery is working !!");
-
+console.log("jQuery is working !!");
 
 $('#open-mobile-menu-btn').on('click', e => {
     e.preventDefault();
