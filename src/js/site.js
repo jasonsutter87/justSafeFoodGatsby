@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 console.log("jQuery is working !!");
 
-$('#open-mobile-menu-btn').on('click', e => {
+$('#open-mobile-menu-btn').click( e => {
     e.preventDefault();
     $('body').toggleClass('mobile-nav-active');
 
@@ -10,7 +10,7 @@ $('#open-mobile-menu-btn').on('click', e => {
     $('#open-mobile-menu-btn').addClass('d-none')
 }) 
 
-$('#close-mobile-menu-btn').on('click', e => {
+$('#close-mobile-menu-btn').click( e => {
     e.preventDefault();
     $('body').toggleClass('mobile-nav-active');
 
