@@ -7,7 +7,11 @@ import '../../js/site.js'; // Import your custom JavaScript file
 
 export default function Footer() {
   useEffect(() => {
-    // Your custom JavaScript code can be used here
+    import('jquery').then(($) => {
+      if (typeof window !== 'undefined') {
+        // Your client-side jQuery code here
+      }
+    });
   }, []);
 
 
