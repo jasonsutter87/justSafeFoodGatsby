@@ -12,6 +12,7 @@ export default function MainNavigation() {
                 <div className="col-auto">
                     <Link to="/" >
                         <StaticImage
+                            loading="eager"
                             src="../../images/assets/brand/JustSafeFood-logo.svg"
                             alt="Just Safe Food Logo"
                             className="header-logo"
@@ -34,6 +35,7 @@ export default function MainNavigation() {
             <div className="col">
             <Link to="/" >
                     <StaticImage
+                    loading="eager"
                     src="../../images/assets/brand/JustSafeFood-logo.svg"
                     alt="Just Safe Food Logo"
                     className="header-logo"
@@ -70,7 +72,7 @@ export default function MainNavigation() {
             </div>
         </div>
 
-        <a to="#page-main-content" className="sr-only">Skip to main content</a>
+        <Link to="#page-main-content" className="sr-only">Skip to main content</Link>
         </nav>
     </div>
   )

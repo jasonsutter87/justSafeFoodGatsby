@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 import{siteMetadata} from '../../../gatsby-config'
+import '../../js/site.js'; // Import your custom JavaScript file
+
 
 export default function Footer() {
+  useEffect(() => {
+    // Your custom JavaScript code can be used here
+  }, []);
+
+
   return (
     
   <footer className="footer">
@@ -66,6 +73,7 @@ export default function Footer() {
     </div>
 
     </div>
+   
 </footer>
 
   )

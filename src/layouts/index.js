@@ -1,13 +1,14 @@
-import React from 'react'
-import MainNavigation from '../componets/common/main-navigation'
-import Footer from '../componets/common/footer'
+import React from 'react';
+import MainNavigation from '../componets/common/main-navigation';
+import MobileNavigation from '../componets/common/mobile-navigation';
+import Footer from '../componets/common/footer';
 
-import HeaderBanner from '../componets/common/header-banner'
-import Cta from '../componets/common/cta'
-import { Helmet } from 'react-helmet'
+import HeaderBanner from '../componets/common/header-banner';
+import Cta from '../componets/common/cta';
+import { Helmet } from 'react-helmet';
 
 import "../styles/site.scss"; 
-import { siteMetadata } from '../../gatsby-config'
+import { siteMetadata } from '../../gatsby-config';
 
 
 export default function Layout({ children}) {
@@ -36,11 +37,13 @@ export default function Layout({ children}) {
             <main>
                 <HeaderBanner /> 
                 <MainNavigation />
+                <MobileNavigation />
                 { children }
                 <Cta /> 
             </main>
             <Footer />   
         </div>
+        <script src='../js/site.js'></script>
     </>
   )
 }
