@@ -8,7 +8,20 @@ import '../../js/site.js'; // Import your custom JavaScript file
 export default function Footer() {
   useEffect(() => {
     // Your custom JavaScript code can be used here
-  }, []);
+    // For example, let's add an event listener to the document
+    const handleDocumentClick = (event) => {
+      // Handle the document click event here
+    };
+
+    // Add an event listener when the component mounts
+    document.addEventListener('click', handleDocumentClick);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []); // The empty dependency array means this effect runs only once on mount
+
 
 
   return (
