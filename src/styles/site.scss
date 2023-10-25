@@ -857,7 +857,7 @@ footer {
 //////////////////////////////////////////////////////////////
 
 #index-hero-section {
-  background-image: url('/images/assets/home/marquee/justsafefood-marquee-S.svg');
+  background-image: url('../images/assets/home/marquee/justsafefood-marquee-S.svg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -868,7 +868,7 @@ footer {
 
 
   @media(min-width: 500px) {
-    background-image: url('/images/assets/home/marquee/justsafefood-marquee-SM.svg');
+    background-image: url('../images/assets/home/marquee/justsafefood-marquee-SM.svg');
     background-position: top;
     height: 600px;
   }
@@ -877,19 +877,19 @@ footer {
   
 
   @media(min-width: 720px) {
-    background-image: url('/images/assets/home/marquee/justsafefood-marquee-M.svg');
+    background-image: url('../images/assets/home/marquee/justsafefood-marquee-M.svg');
     background-position: center;
     padding: 50px 0;
     height: 500px;
   }
   
   @media(min-width: 992px) {
-    background-image: url('/images/assets/home/marquee/justsafefood-marquee-L.svg');
+    background-image: url('../images/assets/home/marquee/justsafefood-marquee-L.svg');
     height: 90vh;
   }
   
   @media(min-width: 1200px) {
-    background-image: url('/images/assets/home/marquee/justsafefood-marquee-XL.svg');
+    background-image: url('../images/assets/home/marquee/justsafefood-marquee-XL.svg');
   }
 }
 
@@ -1221,7 +1221,7 @@ footer {
 
         &::after {
           font-family: "Font Awesome 6 Pro";
-          content: "\f056";
+          content: "/f056";
           font-weight: 900;
           transform: unset !important;
           background-image: unset !important;
@@ -1236,7 +1236,7 @@ footer {
       
       &::after {
         font-family: "Font Awesome 6 Pro";
-        content: "\f055";
+        content: "/f055";
         font-weight: 900;
         background-image: unset !important;
         transform: unset !important;
