@@ -15,13 +15,13 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/images`,
+        path: "src/images", // Specify the path relative to your project directory
       },
     }
   ],
   developMiddleware: (app) => {
     app.get("/404/", (req, res) => {
-      res.sendFile(require("path").join(__dirname, "public", "404", "index.html"));
+      res.sendFile("public/404/index.html"); // Specify the path relative to your project directory
     })
   },
 };
