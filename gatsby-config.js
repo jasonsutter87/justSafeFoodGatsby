@@ -19,4 +19,9 @@ module.exports = {
       },
     }
   ],
+  developMiddleware: (app) => {
+    app.get("/404/", (req, res) => {
+      res.sendFile(require("path").join(__dirname, "public", "404", "index.html"));
+    })
+  },
 };
