@@ -23,7 +23,7 @@ export default PageTemplate;
 export const pageQuery = graphql`
   query ($path: String!) {
     allBuilderModels {
-      home(target: { urlPath: $path }) {
+      onePage(target: { urlPath: $path }) {
         content
       }
     }
