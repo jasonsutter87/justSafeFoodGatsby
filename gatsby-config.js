@@ -1,3 +1,6 @@
+const path = require("path");
+
+
 module.exports = {
   siteMetadata: {
     title: "Jason's Gatsby Site",
@@ -16,6 +19,15 @@ module.exports = {
       options: {
         name: "images",
         path: "src/images", // Specify the path relative to your project directory
+      },
+    },
+    {
+      resolve: '@builder.io/gatsby',
+      options: {
+        publicAPIKey: "ee03a36eb3a340d6a768506bc4f11c1f",
+        templates: {
+          page: path.resolve('src/templates/page.jsx'),
+        },
       },
     }
   ],
